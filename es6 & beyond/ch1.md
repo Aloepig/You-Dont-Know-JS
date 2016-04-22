@@ -21,10 +21,13 @@ ES6 is a radical jump forward for the language. Even if you think you know JS in
 
 ## Versioning 버전명
 The JavaScript standard is referred to officially as "ECMAScript" (abbreviated "ES"), and up until just recently has been versioned entirely by ordinal number (i.e., "5" for "5th edition").
+
 Ecma 인터내셔널의 ECMA-262 기술 규격에 정의된 표준화된 스크립트 프로그래밍 언어이다.
+
 단축해서 ES라고도 부른다. 숫자는 edition. (i.e., "5" for "5th edition")
 
 The earliest versions, ES1 and ES2, were not widely known or implemented. ES3 was the first widespread baseline for JavaScript, and constitutes the JavaScript standard for browsers like IE6-8 and older Android 2.x mobile browsers. For political reasons beyond what we'll cover here, the ill-fated ES4 never came about.
+
 ES3(IE6~8, 안드로이드)부터 퍼지기 시작.
 
 In 2009, ES5 was officially finalized (later ES5.1 in 2011), and settled as the widespread standard for JS for the modern revolution and explosion of browsers, such as Firefox, Chrome, Opera, Safari, and many others.
@@ -39,7 +42,9 @@ Usually well before there's an official stamp of approval, a feature is de facto
 
 The takeaway is that the version labels stop being as important, and JavaScript starts to be seen more as an evergreen, living standard. The best way to cope with this is to stop thinking about your code base as being "ES6-based," for instance, and instead consider it feature by feature for support.
 
-## Transpiling
+## Transpiling 트랜스파일링
+
+transpilig 은 transformation + compiling 의 합성어. 즉, 변환 + 컴파일 = 트랜스파일링.
 
 Made even worse by the rapid evolution of features, a problem arises for JS developers who at once may both strongly desire to use new features while at the same time being slapped with the reality that their sites/apps may need to support older browsers without such support.
 
