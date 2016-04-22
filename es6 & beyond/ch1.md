@@ -82,9 +82,21 @@ This is a minor but pleasant transformation that lets us shorten the `foo: foo` 
 
 Transpilers perform these transformations for you, usually in a build workflow step similar to how you perform linting, minification, and other similar operations.
 
-### Shims/Polyfills
+### Shims/Polyfills (심 / 폴리필)
+
+모든 새로운 ES6 기능은 transpiler가 필요하다. 
+
+Polyfills (일명 shims)은 이전환경에서도 가능하면 새 기능처럼 동작하게 하는 패턴이다.
+
 
 Not all new ES6 features need a transpiler. Polyfills (aka shims) are a pattern for defining equivalent behavior from a newer environment into an older environment, when possible. Syntax cannot be polyfilled, but APIs often can be.
+
+폴리필 = 알맞은 심을 끼워넣는 자바스크립트 코드.
+
+Poly(여러 방법으로) fill(채워 넣는다.) 
+
+즉, 브라우저에서 동작하지 않는 공백을 여러 방법으로 채워넣는 JS를 말한다. (브라우저 파편화 browser fragmentation 줄이는 기법)
+
 
 For example, `Object.is(..)` is a new utility for checking strict equality of two values but without the nuanced exceptions that `===` has for `NaN` and `-0` values. The polyfill for `Object.is(..)` is pretty easy:
 
